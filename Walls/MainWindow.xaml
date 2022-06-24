@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid>
+        <Grid Margin="0,0,0,34">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="50"/>
                 <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="30"/>
@@ -22,12 +22,12 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Label Content="Введите расстояние между столбами" Grid.Column="2" Grid.Row="0" FontSize="16"/>
-            <TextBox Name="rastoyaniiedata" Grid.Column="2" Grid.Row="1" TextChanged="rastoyaniie_TextChanged"/>
-            <Label Content="Введите ширину штахетника" Grid.Column="2" Grid.Row="2" FontSize="16"/>
-            <TextBox Name="shtahecnickdata" Grid.Column="2" Grid.Row="3" TextChanged="shtahecnick_TextChanged"/>
-            <RepeatButton Content="Button" Name="Generate" Grid.Column="2" Grid.Row="4" Delay="500" Interval="100" FontSize="18" Click="Generate_Click"/>
-            <TextBox Name="text" Grid.Column="2" Grid.Row="5" Grid.RowSpan="2" FontSize="16"/>
+            <Label Content="Enter distance between pillars" Grid.Column="2" Grid.Row="0" FontSize="16" Margin="0,0,50,0"/>
+            <TextBox Name="rastoyaniiedata" Grid.Column="2" Grid.Row="1" TextChanged="rastoyaniie_TextChanged" Margin="0,0,50,0"/>
+            <Label Content="Enter width of picket fence" Grid.Column="2" Grid.Row="2" FontSize="16" Margin="0,0,50,0"/>
+            <TextBox Name="shtahecnickdata" Grid.Column="2" Grid.Row="3" TextChanged="shtahecnick_TextChanged" Margin="0,0,50,0"/>
+            <RepeatButton Content="Calculate" Name="Generate" Grid.Column="2" Grid.Row="4" Delay="500" Interval="100" FontSize="18" Click="Generate_Click" Margin="0,0,50,0"/>
+            <TextBox Name="text" Grid.Column="2" Grid.Row="5" Grid.RowSpan="2" FontSize="16" Margin="0,0,50,0"/>
 
 
 
